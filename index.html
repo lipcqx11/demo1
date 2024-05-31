@@ -1,75 +1,90 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ping Li - Personal Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        .bio {
-            font-style: italic;
-        }
-        .section-title {
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        .photos img {
-            margin-right: 10px;
-            margin-bottom: 10px;
-        }
-        nav a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: #007BFF;
-        }
-    </style>
+    <title>Ping Li - Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Ping Li</h1>
-        <h2>Retired Chemist</h2>
+        <div class="logo">Ping Li</div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <section>
-        <div class="bio">
-            <p>Ping Li is a retired chemist with a passion for analytical chemistry and fundamental training in material sciences.</p>
-        </div>
-        <div class="section-title">
-            <h2>Interests and Hobbies</h2>
-            <ul>
-                <li>Analytical Chemistry</li>
-                <li>Fundamental Training in Material Sciences</li>
-                <!-- Add more interests or hobbies as needed -->
-            </ul>
-        </div>
-        <div class="photos">
-            <h2>Photos</h2>
-            <img src="1.jpg" alt="Ping Li's Photo 1" width="200">
-            <img src="2.jpg" alt="Ping Li's Photo 2" width="200">
-            <img src="3.jpg" alt="Ping Li's Photo 3" width="200">
-            <!-- Add more <img> tags as needed -->
-        </div>
+    
+    <section class="hero">
+        <img src="images/hero.jpg" alt="Hero Image" class="hero-img">
+        <h1>Welcome to Ping Li's Website</h1>
+        <p>Your one-stop solution for [service/offer]</p>
+        <a href="services.html" class="cta-button">Learn More</a>
     </section>
+    
+    <section class="about">
+        <h2>About Us</h2>
+        <img src="images/about.jpg" alt="About Image" class="about-img">
+        <p>[Brief introduction about Ping Li]</p>
+    </section>
+    
+    <section class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>
+                <img src="images/service1.jpg" alt="Service 1 Image">
+                <h3>Service 1</h3>
+                <p>[Description of Service 1]</p>
+            </li>
+            <li>
+                <img src="images/service2.jpg" alt="Service 2 Image">
+                <h3>Service 2</h3>
+                <p>[Description of Service 2]</p>
+            </li>
+            <li>
+                <img src="images/service3.jpg" alt="Service 3 Image">
+                <h3>Service 3</h3>
+                <p>[Description of Service 3]</p>
+            </li>
+        </ul>
+    </section>
+    
+    <section class="testimonials">
+        <h2>Testimonials</h2>
+        <blockquote>
+            <p>"[Customer review]"</p>
+            <cite>- [Customer Name]</cite>
+        </blockquote>
+    </section>
+    
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
     <footer>
-        <p>Contact: Lipchen98@hotmail.com.com</p>
+        <p>&copy; 2024 Ping Li. All rights reserved.</p>
+        <ul>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://www.twitter.com">Twitter</a></li>
+            <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+        </ul>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
     </footer>
 </body>
 </html>
